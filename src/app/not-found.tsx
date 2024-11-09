@@ -1,9 +1,12 @@
-'use client' // Error components must be Client Components
+'use client'
+import Link from 'next/link'
+
+// Error components must be Client Components
 
 export default function () {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
+      <div className="grid min-h-full place-items-center px-6">
         <div className="text-center">
           <p className="text-3xl font-semibold text-foreground opacity-60">HTTP 404</p>
           <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">Page not found</h1>
@@ -14,6 +17,9 @@ export default function () {
             <a href="/" className="btn btn-primary">
               Go Home
             </a>
+            <Link className="btn" href="/signin">
+              Go to parallel intercepted route
+            </Link>
           </div>
         </div>
       </div>
