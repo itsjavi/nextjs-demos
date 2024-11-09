@@ -22,12 +22,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal,
 }: Readonly<{
   children: React.ReactNode
+  modal: React.ReactNode
 }>) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {modal}
         <header className="container mx-auto mb-0 fixed top-0 left-0 right-0 z-50">
           <nav className="flex items-center justify-between py-4">
             <Link href="/">
