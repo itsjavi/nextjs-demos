@@ -25,6 +25,9 @@ export default function Home() {
           <Link className="btn btn-outline" href="/about">
             About this site
           </Link>
+          <Link className="btn btn-error btn-outline" href="/errorpage">
+            Trigger error page
+          </Link>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
