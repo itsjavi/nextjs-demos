@@ -1,6 +1,5 @@
 'use client' // Error components must be Client Components
 
-import Link from 'next/link'
 import { useEffect } from 'react'
 
 export default function ({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
@@ -26,9 +25,6 @@ export default function ({ error, reset }: { error: Error & { digest?: string };
             <button className="btn btn-primary" onClick={reset}>
               Try again
             </button>
-            <Link className="btn" href="/signin">
-              Go to parallel intercepted route
-            </Link>
           </div>
         </div>
       </div>

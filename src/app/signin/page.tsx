@@ -10,7 +10,7 @@ export default async function () {
 
   return (
     <Card popup>
-      (Not-intercepted)
+      (Page-View)
       <LoginForm />
     </Card>
   )

@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link'
 
 // Error components must be Client Components
 
@@ -17,9 +16,6 @@ export default function () {
             <a href="/" className="btn btn-primary">
               Go Home
             </a>
-            <Link className="btn" href="/signin">
-              Go to parallel intercepted route
-            </Link>
           </div>
         </div>
       </div>
