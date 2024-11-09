@@ -1,7 +1,7 @@
-import { Card } from '@/components/blocks'
+import { LoginForm } from '@/app/signin/_components'
+import { InterceptedModal } from '@/components/intercepted-modal'
 import { isLoggedIn } from '@/lib/auth'
 import { redirect } from 'next/navigation'
-import { LoginForm } from './_components'
 
 export default async function () {
   if (await isLoggedIn()) {
@@ -9,9 +9,9 @@ export default async function () {
   }
 
   return (
-    <Card popup>
-      (Not-intercepted)
+    <InterceptedModal>
+      (Modal-intercepted)
       <LoginForm />
-    </Card>
+    </InterceptedModal>
   )
 }
